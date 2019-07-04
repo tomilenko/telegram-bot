@@ -2,14 +2,21 @@
   "name": "telegram-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/app.js",
+  "types": "dist/app.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prestart": "tsc",
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "12.0.10",
+    "telegraf": "^3.30.1",
+    "ts-telegraf-decorators": "0.1.1",
+    "types": "^0.1.1",
     "typescript": "^3.5.2"
   }
 }
